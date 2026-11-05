@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsDrivers" targetNamespace="http://tempuri.org/DsDrivers.xsd" xmlns:mstns="http://tempuri.org/DsDrivers.xsd" xmlns="http://tempuri.org/DsDrivers.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DVLDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DVLDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DVLD.Properties.Settings.GlobalReference.Default.DVLDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Drivers_ViewTableAdapter" GeneratorDataComponentClassName="Drivers_ViewTableAdapter" Name="Drivers_View" UserDataComponentName="Drivers_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DVLDConnectionString (Settings)" DbObjectName="DVLD.dbo.Drivers_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DriverID, PersonID, NationalNo, FullName, CreatedDate, NumberOfActiveLicenses FROM dbo.Drivers_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DriverID" DataSetColumn="DriverID" />
+              <Mapping SourceColumn="PersonID" DataSetColumn="PersonID" />
+              <Mapping SourceColumn="NationalNo" DataSetColumn="NationalNo" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="CreatedDate" DataSetColumn="CreatedDate" />
+              <Mapping SourceColumn="NumberOfActiveLicenses" DataSetColumn="NumberOfActiveLicenses" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsDrivers" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DsDrivers" msprop:Generator_DataSetName="DsDrivers">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Drivers_View" msprop:Generator_RowEvHandlerName="Drivers_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="Drivers_ViewRowDeleted" msprop:Generator_RowDeletingName="Drivers_ViewRowDeleting" msprop:Generator_RowEvArgName="Drivers_ViewRowChangeEvent" msprop:Generator_TablePropName="Drivers_View" msprop:Generator_RowChangedName="Drivers_ViewRowChanged" msprop:Generator_RowChangingName="Drivers_ViewRowChanging" msprop:Generator_TableClassName="Drivers_ViewDataTable" msprop:Generator_RowClassName="Drivers_ViewRow" msprop:Generator_TableVarName="tableDrivers_View" msprop:Generator_UserTableName="Drivers_View">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DriverID" msprop:Generator_ColumnPropNameInRow="DriverID" msprop:Generator_ColumnPropNameInTable="DriverIDColumn" msprop:Generator_ColumnVarNameInTable="columnDriverID" msprop:Generator_UserColumnName="DriverID" type="xs:int" />
+              <xs:element name="PersonID" msprop:Generator_ColumnPropNameInRow="PersonID" msprop:Generator_ColumnPropNameInTable="PersonIDColumn" msprop:Generator_ColumnVarNameInTable="columnPersonID" msprop:Generator_UserColumnName="PersonID" type="xs:int" />
+              <xs:element name="NationalNo" msprop:Generator_ColumnPropNameInRow="NationalNo" msprop:Generator_ColumnPropNameInTable="NationalNoColumn" msprop:Generator_ColumnVarNameInTable="columnNationalNo" msprop:Generator_UserColumnName="NationalNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_UserColumnName="FullName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="83" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_UserColumnName="CreatedDate" type="xs:dateTime" />
+              <xs:element name="NumberOfActiveLicenses" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="NumberOfActiveLicenses" msprop:Generator_ColumnPropNameInTable="NumberOfActiveLicensesColumn" msprop:Generator_ColumnVarNameInTable="columnNumberOfActiveLicenses" msprop:Generator_UserColumnName="NumberOfActiveLicenses" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Drivers_View" />
+      <xs:field xpath="mstns:DriverID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

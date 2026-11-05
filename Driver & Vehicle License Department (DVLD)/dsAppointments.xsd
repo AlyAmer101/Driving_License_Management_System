@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAppointments" targetNamespace="http://tempuri.org/dsAppointments.xsd" xmlns:mstns="http://tempuri.org/dsAppointments.xsd" xmlns="http://tempuri.org/dsAppointments.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DVLDConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DVLDConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DVLD.Properties.Settings.GlobalReference.Default.DVLDConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TestAppointments_ViewTableAdapter" GeneratorDataComponentClassName="TestAppointments_ViewTableAdapter" Name="TestAppointments_View" UserDataComponentName="TestAppointments_ViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DVLDConnectionString (Settings)" DbObjectName="DVLD.dbo.TestAppointments_View" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT TestAppointmentID, AppointmentDate, PaidFees, IsLocked FROM dbo.TestAppointments_View</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="TestAppointmentID" DataSetColumn="TestAppointmentID" />
+              <Mapping SourceColumn="AppointmentDate" DataSetColumn="AppointmentDate" />
+              <Mapping SourceColumn="PaidFees" DataSetColumn="PaidFees" />
+              <Mapping SourceColumn="IsLocked" DataSetColumn="IsLocked" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAppointments" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="dsAppointments" msprop:Generator_DataSetName="dsAppointments">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TestAppointments_View" msprop:Generator_RowEvHandlerName="TestAppointments_ViewRowChangeEventHandler" msprop:Generator_RowDeletedName="TestAppointments_ViewRowDeleted" msprop:Generator_RowDeletingName="TestAppointments_ViewRowDeleting" msprop:Generator_RowEvArgName="TestAppointments_ViewRowChangeEvent" msprop:Generator_TablePropName="TestAppointments_View" msprop:Generator_RowChangedName="TestAppointments_ViewRowChanged" msprop:Generator_RowChangingName="TestAppointments_ViewRowChanging" msprop:Generator_TableClassName="TestAppointments_ViewDataTable" msprop:Generator_RowClassName="TestAppointments_ViewRow" msprop:Generator_TableVarName="tableTestAppointments_View" msprop:Generator_UserTableName="TestAppointments_View">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TestAppointmentID" msprop:Generator_ColumnPropNameInRow="TestAppointmentID" msprop:Generator_ColumnPropNameInTable="TestAppointmentIDColumn" msprop:Generator_ColumnVarNameInTable="columnTestAppointmentID" msprop:Generator_UserColumnName="TestAppointmentID" type="xs:int" />
+              <xs:element name="AppointmentDate" msprop:Generator_ColumnPropNameInRow="AppointmentDate" msprop:Generator_ColumnPropNameInTable="AppointmentDateColumn" msprop:Generator_ColumnVarNameInTable="columnAppointmentDate" msprop:Generator_UserColumnName="AppointmentDate" type="xs:dateTime" />
+              <xs:element name="PaidFees" msprop:Generator_ColumnPropNameInRow="PaidFees" msprop:Generator_ColumnPropNameInTable="PaidFeesColumn" msprop:Generator_ColumnVarNameInTable="columnPaidFees" msprop:Generator_UserColumnName="PaidFees" type="xs:decimal" />
+              <xs:element name="IsLocked" msprop:Generator_ColumnPropNameInRow="IsLocked" msprop:Generator_ColumnPropNameInTable="IsLockedColumn" msprop:Generator_ColumnVarNameInTable="columnIsLocked" msprop:Generator_UserColumnName="IsLocked" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:TestAppointments_View" />
+      <xs:field xpath="mstns:TestAppointmentID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
