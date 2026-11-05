@@ -157,6 +157,7 @@ DVLD/
 DotNet Developer | C# | ADO.NET | SQL Server
 
 GitHub: [AlyAmer101](https://github.com/AlyAmer101)
+Linkedin: [Aly Amer](https://www.linkedin.com/in/eng-aly-amer/)
 
 ---
 
