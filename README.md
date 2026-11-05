@@ -115,22 +115,22 @@ To run the project on your computer, follow these steps:
 ## Screenshots
 
 ### Login
-![Login](ScreenShots/Login.PNG)
+![Login](./ScreenShots/Login.PNG)
 
 ### Main Dashboard
-![Main Dashboard](ScreenShots/Main%20Dashboard.PNG)
+![Main Dashboard](./ScreenShots/Main%20Dashboard.PNG)
 
 ### Main Dashboard 2
-![Main Dashboard 2](ScreenShots/Main%20Dashboard%202.PNG)
+![Main Dashboard 2](./ScreenShots/Main%20Dashboard%202.PNG)
 
 ### People Management
-![People Management](ScreenShots/People%20Management.PNG)
+![People Management](./ScreenShots/People%20Management.PNG)
 
 ### Users & Add New User
-![Users & Add New User](ScreenShots/Users%20%26%20Add%20New%20User.PNG)
+![Users & Add New User](./ScreenShots/Users%20%26%20Add%20New%20User.PNG)
 
 ### Applications License Management
-![Applications License Management](ScreenShots/Applications%20License%20Managment.PNG)
+![Applications License Management](./ScreenShots/Applications%20License%20Managment.PNG)
 
 ## Project Structure
 
