@@ -115,7 +115,7 @@ To run the project on your computer, follow these steps:
 ## Screenshots
 
 ### Login
-![Login](./ScreenShots/Login.PNG)
+![Login](ScreenShots/Login.PNG)
 
 ### Main Dashboard
 ![Main Dashboard](./ScreenShots/Main%20Dashboard.PNG)
